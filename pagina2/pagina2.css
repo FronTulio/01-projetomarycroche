@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header {
+    background-image: linear-gradient(to top right, hsl(261, 75%, 80%), hsl(263, 75%, 73%),hsl(263, 85%, 90%));
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px hsla(66, 70%, 50%, 0.303);
+}
+body {
+    border-radius: 10px;
+    background-image: linear-gradient(to top right, hsl(261, 75%, 85%), hsl(263, 80%, 83%),hsl(263, 85%, 90%));
+}
+
+hr {
+    height: 10px;
+    background-color: hsl(66, 70%, 70%);
+    border-radius: 20px;
+}
+
+h1,h2 {
+    padding: 8px;
+    font-size: 1.5em;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+    box-shadow: 5px 5px 15px hsla(263, 75%, 73%, 0.596);
+    background-image: linear-gradient(to right, hsl(66, 70%, 50%)10%, hsl(43, 100%, 78%) 60%, hsl(66, 70%, 50%));
+    color:hsl(263, 55%, 66%);
+}
+p {
+    text-align: justify;
+    margin: 1%;
+}
+iframe {
+    width:99%;
+}
+div {
+    padding: 5px;
+    background-color: rgba(126, 188, 204, 0.233);
+}
+footer {
+    background-image: url(foto/imagemfooter.jpg);
+    border-radius: 10px;
+    margin-bottom: 3%;
+    height: 85px;
+}
+#blusa {
+    width: 45%;
+}
+img {
+    width: 99%;
+    margin: 2px;
+    border-radius: 1em;
+}

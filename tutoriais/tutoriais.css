@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+@font-face {
+    font-family: courget titulo;
+    src: url(fontes/courget/Courgette-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: jaro;
+    src: url(fontes/DM-jaro/DM_Serif_Display/DMSerifDisplay-Regular.ttf) format(truetype);
+}
+html {
+    background-color: lightpink;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'courget titulo';
+    height: 100px;
+    text-align: center;
+
+    background-color: hsl(58, 79%, 90%);
+    border-radius: 15px 15px 0 0;
+}
+.titulo {
+    height: 50px;
+}
+body {
+    background-color: azure;
+    max-width: 70em;
+    margin: auto;
+    border-radius: 15px 15px;
+    box-shadow: -1px 5px 50px hsla(0, 0%, 0%, 0.61)
+}
+nav {
+    display: inline-flex;
+    position: sticky;
+    top: 0;
+    font-family: 'courget titulo';
+    width: 100%;
+    height: 3em;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    background-color: hsl(91, 71%, 73%);
+    padding: 10px;
+    margin: auto;
+}
+nav > div {
+    padding: 5px;
+}
+nav > div > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: blueviolet;
+    margin: auto;
+}
+.inicio:hover {
+    position: relative;
+    left: auto;
+    right: auto;
+    border: 2px solid rgba(224, 255, 255, 0.719);
+    border-radius: 10px 10px 10px 10px;
+    font-size: 1.2em;
+    width: min-content;
+    text-wrap: nowrap;
+    height: 2rem;
+    padding: 2px 4px;
+    color: antiquewhite;
+    background-color: hsl(91, 61%, 50%);
+    box-shadow: 2px -5px 5px rgba(0, 0, 0, 0.699);
+    transition: ease-out 0.3s;
+}
+.novidades:hover {
+    position: relative;
+    left: auto;
+    right: auto;
+    border: 2px solid rgba(224, 255, 255, 0.719);
+    border-radius: 10px 10px 10px 10px;
+    font-size: 1.2em;
+    width: min-content;
+    text-wrap: nowrap;
+    height: 2rem;
+    padding: 2px 4px;
+    color: antiquewhite;
+    background-color: hsl(91, 61%, 50%);
+    box-shadow: 2px -5px 5px rgba(0, 0, 0, 0.699);
+    transition: ease-out 0.3s;
+}
+.novidadesfilho {
+    display: none;
+    position: absolute;
+}
+.novidadesfilho a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'courget titulo';
+    padding: 2px;
+    margin: 1px;
+    width: 40px;
+    background-color: transparent;
+}
+.novidades:hover > .novidadesfilho {
+    display: block;
+}
+.outras:hover {
+    position: relative;
+    left: auto;
+    right: auto;
+    border: 2px solid rgba(224, 255, 255, 0.719);
+    border-radius: 10px 10px 10px 10px;
+    font-size: 1.2em;
+    width: min-content;
+    text-wrap: nowrap;
+    height: 2rem;
+    padding: 2px 4px;
+    color: antiquewhite;
+    background-color: hsl(91, 61%, 50%);
+    box-shadow: 2px -5px 5px rgba(0, 0, 0, 0.699);
+    transition: ease-out 0.3s;
+}
+.outrasfilho {
+    display: none;
+    position: absolute;
+}
+.outrasfilho a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    font-size: 16px;
+    padding: 2px;
+    margin: 1px;
+    width: 40px;
+    background-color: transparent;
+}
+.outras:hover > .outrasfilho {
+    display: block;
+}
+
+.item1 {
+    grid-row: 1 / -1;
+    padding: 6px;
+}
+
+h2, h3{
+    font-family: 'jaro';
+    font-size: 1.5em;
+}
+h3 {
+    margin-top: 8px;
+    font-size: 1.2em;
+}
+.item1 > a {
+    display: block;
+    text-decoration: none;
+    margin-top: 7px;
+    color: rgb(46, 38, 49);
+    font-size: 1.1em;
+}
+.item2 {
+    grid-column: 2 / -1;
+    animation: banner 7s linear infinite alternate-reverse;
+}
+@keyframes banner {
+    0% {
+        background-image: url(imagem/bateria.png);
+        background-color: antiquewhite;
+    }
+    50% {
+        background-image: url(imagem/cuecas.png);
+    }
+    100% {
+        background-image: url(imagem/microfone.png);
+        background-color: blueviolet;
+    }
+}
+.itemv {
+   position: relative;
+   height: 100%;
+   width: 100%;
+   padding: 3px;
+}
+main {
+    display: grid;
+    grid-template-columns: 8em 1fr;
+    grid-template-rows: 8em 1fr;
+    gap: 3px;
+    background-color: sienna;
+}
+main > div {
+    background-image: linear-gradient(to right, rgba(255, 210, 216, 0.884) 8%, hsl(0, 10%, 86%) 20% 82%, rgba(255, 182, 193, 0.555) 104%);
+    min-height: 50px;
+}
+section {
+    display: grid;
+    background-color: hsl(0, 10%, 86%);
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+}
+section > div {
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    font-family: 'jaro';
+    background-color: rgba(184, 238, 238, 0.397);
+    min-height: 100px;
+    border: 2px outset hsl(225, 51%, 40%);
+    border-radius: 100px 10px;
+    margin: 3px;
+}
+section > div > a {
+    text-decoration: none;
+    position: absolute;
+    text-align: center;
+    font: bold;
+    color: hsl(225, 75%, 24%);
+    width: 25vh;
+    background-color: rgba(127, 255, 212);
+    box-shadow: 1px 2px 10px #000;
+    border-radius: 5px;
+    padding: 1px 10px;
+}
+section > img {
+    height: 400px;
+}
+footer {
+    display: block;
+    background-color: thistle;
+    height: 100px;
+}
+.whatsapp {  
+    display: block;
+    position: fixed;
+    bottom: 4%;
+    left: 1%;
+}
+.whatsapp > img {
+    height: 70px;
+}
+@media screen and (max-width: 850px){
+    main {
+        grid-template-columns: 7.5em 1fr;
+        grid-template-rows: 7em 1fr;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .whatsapp > img {
+        height: 55px;
+    }
+}
+@media screen and (max-width:615px){
+    main {
+        grid-template-columns: 7em 1fr;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    section {
+        grid-template-columns: 1fr;
+    }
+    .whatsapp > img {
+        height: 40px;
+    }
+}

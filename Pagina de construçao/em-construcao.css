@@ -1,0 +1,52 @@
+@font-face {
+    font-family:'noto sans';
+    src: url(fontes/NotoSans-VariableFont_wdth\,wght.ttf) format('truetype'); src: url(fontes/NotoSans-Italic-VariableFont_wdth\,wght.ttf) format('truetype') ;
+}
+@font-face {
+    font-family: 'libre baskerville';
+    src: url(fontes/baskervile-fonte/LibreBaskerville-Bold.ttf) format('truetype');
+}
+body {
+    width: 600px;
+    min-width: 200px;
+    margin: auto;
+    background-color: #80ffd43f;
+}
+
+.ptitulo {
+    font-family:libre baskerville, 'noto sans';
+    font-size: 40px;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px ;
+    -webkit-text-stroke-color: #fce40cc9;
+}
+.titulo {
+    display: flex;
+    background: left / cover url(imagens/fundologo2.jpeg);
+    height: 170px;
+    align-items: center;
+    justify-content: center;
+    color:  #cc0c99;
+    min-width: 200px;
+    max-width: 600px;
+    padding: 10px;
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+p {
+    text-align: right;
+    text-indent: 30px;
+}
+@media screen and (max-width: 685px) {
+    body {
+        width: 400px;
+        margin: auto;
+    }
+}
+div > a > img {
+    height: 85px;
+    width: 65px;
+    padding: 5px;
+}

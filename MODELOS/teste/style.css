@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --cor1: #00ffff;
+    --cor2: #00ff22;
+    --cor3: #fbff00;
+    --cor4: #ea00ff;
+
+    --font2: cursive;
+}
+.hover {
+    margin: auto;
+    height: 200px;
+    width: 210px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 0px 0px 50px #5e013f98;
+    position: absolute;
+    top: 2%;
+    left: 40%;
+    animation: fundo 3s alternate infinite;
+    animation-delay: 0.3s;
+}
+h1 {
+    text-align: center;
+}
+.hover:hover > section > .nome {
+    display: block;
+}
+section {
+    justify-content: center;
+    font-size: 2.5em;
+}
+.fundo {
+    height: 500px;
+    width: 800px;
+    margin: auto;
+    background-image: url(imagens/pexels-ale-belen-299521436-13359919.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.frente {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 200px;
+    height: 150px;
+    z-index: 1;
+}
+.texto > p {
+    position: relative;
+}
+span {
+    display: inline-block;
+    padding: 5px;
+    opacity: 0;
+    z-index: 1;
+}
+.t {
+    animation: letreiro 3s alternate infinite;
+}
+.u {
+    animation: letreiro 3s alternate infinite;
+    animation-delay: 0.3s;
+}
+.l {
+    animation: letreiro 3s alternate infinite;
+    animation-delay: 0.45s;
+}
+.i {
+    animation: letreiro 3s alternate infinite;
+    animation-delay: 0.6s;
+}
+.o {
+    animation: letreiro 3s alternate infinite;
+    animation-delay: 0.75s;
+}
+@keyframes letreiro {
+    0% {
+        
+    }
+    5% {
+        opacity: 0.8;
+    }
+    15% {
+        transform: skew(-30deg, 10deg);
+        font-size: 150%;
+        opacity: 1;
+    }
+    25% {
+        transform: translate(40px, -50px);
+    }
+    40% {
+        transform:  translate(120px, 110px) skew(30deg, -10deg);
+        font-size: initial;
+    }
+    50% {
+        transform: translate(100px, 80px) skew(10deg, -10deg);
+    }
+    75% {
+        transform: translate(100px, 80px) skew(-20deg, 30deg);
+    }
+    100% {
+        transform: translate(100px, 80px) skew(-40deg, 10deg);
+        opacity: 1;
+    }
+ 
+}
+@keyframes fundo {
+    0% {
+
+    }
+    25% {
+        background-color: #00ffff;
+        border-radius: 150px 0 0 0 ;
+    }
+    50% {
+        background-color: #00ff22;
+        border-radius: 0 150px 0 0 ;
+    }
+    75% {
+        font-size: inherit;
+        border-radius: 0 0 150px 0 ;
+    }
+    100% {
+        background-color: antiquewhite;
+        border-radius: 0 0 0 150px;
+        font-size: 4px;
+    }
+}
